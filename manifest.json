@@ -1,0 +1,25 @@
+{
+  "required_api_version": "^2.0.0",
+  "name": "Snippet Search",
+  "description": "Search snippets by keyword and type their content into the focused application.",
+  "developer_name": "Hazel",
+  "icon": "images/icon.png",
+  "options": {
+    "query_debounce": 0.1
+  },
+  "preferences": [
+    {
+      "id": "kw",
+      "type": "keyword",
+      "name": "Snippet Search Keyword",
+      "default_value": "s"
+    },
+    {
+      "id": "snippet_file",
+      "type": "input",
+      "name": "Snippets file",
+      "description": "Each line uses: keywords : content",
+      "default_value": "~/.config/snippet-search/snippets.txt"
+    }
+  ]
+}
